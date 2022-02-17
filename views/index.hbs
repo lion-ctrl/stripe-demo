@@ -1,0 +1,24 @@
+{{> header_layout}}
+<div class="container">
+    <div class="row mt-4">
+        <div class="col-md-6 mx-auto">
+            <div class="card mt-4">
+                <img src="https://reasound.com/wp-content/uploads/2021/10/Martin-Audio-X8B.jpg" alt="demo" class="card-img-top">
+                <div class="card-body">
+                    <h2>{{price}}$</h2>
+                    <p>{{description}}</p>
+                </div>
+                <div class="card-footer">
+                    <div id="card-element"></div>
+                    <button type="button" id="checkout-button" class="btn btn-dark d-block w-100 mt-2">
+                        <i class="fa-solid fa-cart-shopping"></i> 
+                        Buy
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://js.stripe.com/v3/"></script>
+<script src="js/script.js"></script>
+{{> footer_layout}}
